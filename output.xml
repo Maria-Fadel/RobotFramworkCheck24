@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230130 16:17:16.778" rpa="false" schemaversion="3">
+<suite id="s1" name="CHECK24 VW Golf" source="C:\Users\ffadel\PycharmProjects\Check24\TestCases\CHECK24_VW_Golf.robot">
+<test id="s1-t1" name="Überprüfen der grundlegende Suchfunktion für Check25/KFZ" line="23">
+<kw name="Open Browser &amp; Maximize" library="Browser_Open&amp;Close" type="SETUP">
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230130 16:17:16.894" endtime="20230130 16:17:16.894"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230130 16:17:16.894" level="INFO">Opening browser 'Chrome' to base url 'https://www.check24.de/kfz-versicherung/'.</msg>
+<status status="PASS" starttime="20230130 16:17:16.894" endtime="20230130 16:17:18.671"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230130 16:17:18.672" endtime="20230130 16:17:18.782"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:16.894" endtime="20230130 16:17:18.782"/>
+</kw>
+<kw name="Start TestCase" library="StartPage">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.25 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230130 16:17:18.782" endtime="20230130 16:17:18.782"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${startPage_Akzeptieren}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:18.782" level="INFO">Clicking element 'xpath://*[text()="Akzeptieren"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:18.782" endtime="20230130 16:17:19.362"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>KFZ Versicherung Vergleich [2023] 78% günstiger - CHECK24</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230130 16:17:19.617" level="INFO">Page title is 'KFZ Versicherung Vergleich [2023] 78% günstiger - CHECK24'.</msg>
+<status status="PASS" starttime="20230130 16:17:19.362" endtime="20230130 16:17:19.617"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Deutschlands bester Vergleich</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230130 16:17:20.154" level="INFO">Current page contains text 'Deutschlands bester Vergleich'.</msg>
+<status status="PASS" starttime="20230130 16:17:19.617" endtime="20230130 16:17:20.154"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${startPage_Tarifvergleichen }</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:20.155" level="INFO">Clicking element 'xpath://button[@type="submit"][contains(text(),"Tarife vergleichen")]'.</msg>
+<status status="PASS" starttime="20230130 16:17:20.154" endtime="20230130 16:17:21.248"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:18.782" endtime="20230130 16:17:21.248"/>
+</kw>
+<kw name="Neu angeschafftes Auto auswählen" library="SituationPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${situationPage_neuesAngeschafftesAuto}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:21.249" level="INFO">Clicking element 'xpath://*[@data-c24-test="opb-berechnungsgrund-fahrzeugwechsel"]//*[text()="Neu angeschafftes Auto"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:21.249" endtime="20230130 16:17:21.818"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${weiterButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:21.820" level="INFO">Clicking element 'xpath://button[contains(text(),"weiter")]'.</msg>
+<status status="PASS" starttime="20230130 16:17:21.819" endtime="20230130 16:17:22.412"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${autoPage_fahrzeugscheinButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:22.412" level="INFO">Clicking element 'xpath://*[@data-c24-test="vehicle-search-hsn-tsn"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:22.412" endtime="20230130 16:17:22.983"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:21.248" endtime="20230130 16:17:22.983"/>
+</kw>
+<kw name="weiter-Button click" library="SituationPage">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${weiterButton}</arg>
+<arg>[RETURN]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230130 16:17:22.987" level="INFO">Sending key(s) ('[RETURN]',) to xpath://button[contains(text(),"weiter")] element.</msg>
+<msg timestamp="20230130 16:17:23.809" level="INFO">Sending keys [RETURN]</msg>
+<status status="PASS" starttime="20230130 16:17:22.986" endtime="20230130 16:17:24.092"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:22.985" endtime="20230130 16:17:24.092"/>
+</kw>
+<kw name="Radio Button Fahrzeugschein auswählen" library="AutoPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${autoPage_fahrzeugscheinButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:24.092" level="INFO">Clicking element 'xpath://*[@data-c24-test="vehicle-search-hsn-tsn"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:24.092" endtime="20230130 16:17:24.638"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:24.092" endtime="20230130 16:17:24.638"/>
+</kw>
+<kw name="HSN &amp; TSN mit Daten ausfühllen" library="AutoPage">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${autoPage_hsn}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230130 16:17:25.184" level="INFO">Element 'xpath://*[@data-c24-test="hsn"]' is displayed.</msg>
+<status status="PASS" starttime="20230130 16:17:24.638" endtime="20230130 16:17:25.184"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Fahrzeugauswahl</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230130 16:17:25.722" level="INFO">Current page contains text 'Fahrzeugauswahl'.</msg>
+<status status="PASS" starttime="20230130 16:17:25.184" endtime="20230130 16:17:25.722"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${autoPage_hsn}</arg>
+<arg>${autoPage.hsn}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:25.722" level="INFO">Typing text '0603' into text field 'xpath://*[@data-c24-test="hsn"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:25.722" endtime="20230130 16:17:26.688"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${autoPage_tsn}</arg>
+<arg>${autoPage.tsn}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:26.688" level="INFO">Typing text 'CBL' into text field 'xpath://*[@data-c24-test="tsn"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:26.688" endtime="20230130 16:17:27.613"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:24.638" endtime="20230130 16:17:27.613"/>
+</kw>
+<kw name="Assertion: das gewünschte Auto wurde gefunden" library="AutoPage">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>VW Golf VII 1.0 TSI</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230130 16:17:28.146" level="INFO">Current page contains text 'VW Golf VII 1.0 TSI'.</msg>
+<status status="PASS" starttime="20230130 16:17:27.613" endtime="20230130 16:17:28.146"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:27.613" endtime="20230130 16:17:28.146"/>
+</kw>
+<kw name="Erstzulassung des Auto" library="AutoPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${autoPage_erstzulassung}</arg>
+<arg>${autoPage.erstzulassung}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:28.146" level="INFO">Typing text '13.03.2017' into text field 'xpath://input[@name="erstzulassung"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:28.146" endtime="20230130 16:17:29.093"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:28.146" endtime="20230130 16:17:29.093"/>
+</kw>
+<kw name="Ungefährer Nerwert des Autos" library="AutoPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${autoPage_neuwert}</arg>
+<arg>${autoPage.neuwert}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:29.098" level="INFO">Typing text '15000' into text field 'xpath://input[@data-c24-test="neuwert"][@name="neuwert"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:29.093" endtime="20230130 16:17:30.066"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:29.093" endtime="20230130 16:17:30.066"/>
+</kw>
+<kw name="weiter-Button click" library="SituationPage">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${weiterButton}</arg>
+<arg>[RETURN]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230130 16:17:30.066" level="INFO">Sending key(s) ('[RETURN]',) to xpath://button[contains(text(),"weiter")] element.</msg>
+<msg timestamp="20230130 16:17:35.903" level="INFO">Sending keys [RETURN]</msg>
+<status status="PASS" starttime="20230130 16:17:30.066" endtime="20230130 16:17:36.175"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:30.066" endtime="20230130 16:17:36.175"/>
+</kw>
+<kw name="Verwendung Nur Privat" library="NutzungAutoPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${fahrzeugsnutzungPage_verwendungDesFahrzeugs}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:36.175" level="INFO">Clicking element 'xpath://*[@data-c24-test="fahrzeugnutzungexklusiv/NUR_PRIVAT"]//*[text()="nur privat (inkl. Arbeitsweg)"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:36.175" endtime="20230130 16:17:36.946"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:36.175" endtime="20230130 16:17:36.946"/>
+</kw>
+<kw name="Jährliche Fahrleistung" library="NutzungAutoPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${fahrzeugsnutzungPage_jaehrlichrNutzung}</arg>
+<arg>${jaehrlichrNutzung}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:36.946" level="INFO">Typing text '12' into text field 'xpath://input[@data-c24-test="fahrleistung"][@name="fahrleistung"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:36.946" endtime="20230130 16:17:37.883"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:36.946" endtime="20230130 16:17:37.883"/>
+</kw>
+<kw name="Nächtlicher Stellplatz: Einzelgarage" library="NutzungAutoPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${fahrzeugsnutzungPage_naechtlicherStellplatz}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:37.883" level="INFO">Clicking element 'xpath://*[@data-c24-test="stellplatz/open"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:37.883" endtime="20230130 16:17:38.485"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${fahrzeugsnutzungPage_einzelgaragge}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:38.485" level="INFO">Clicking element 'xpath://*[@data-c24-test="stellplatz/EINZELGARAGE"][@role="option"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:38.485" endtime="20230130 16:17:39.075"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:37.883" endtime="20230130 16:17:39.075"/>
+</kw>
+<kw name="Finanz des Autos: Barkauf" library="NutzungAutoPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${fahrzeugsnutzungPage_finanzierungBarkauf}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:39.079" level="INFO">Clicking element 'xpath://*[@data-c24-test="fahrzeugfinanzierung/BARKAUF"]//*[text()="Barkauf"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:39.079" endtime="20230130 16:17:39.677"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:39.075" endtime="20230130 16:17:39.677"/>
+</kw>
+<kw name="weiter-Button click" library="SituationPage">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${weiterButton}</arg>
+<arg>[RETURN]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230130 16:17:39.680" level="INFO">Sending key(s) ('[RETURN]',) to xpath://button[contains(text(),"weiter")] element.</msg>
+<msg timestamp="20230130 16:17:42.219" level="INFO">Sending keys [RETURN]</msg>
+<status status="PASS" starttime="20230130 16:17:39.680" endtime="20230130 16:17:42.484"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:39.677" endtime="20230130 16:17:42.484"/>
+</kw>
+<kw name="Assertion: Versicherungsnehmer (Sie selbst) ist vorhanden" library="VersicherungsnehmerPage">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Versicherungsnehmer (Sie selbst)</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230130 16:17:43.020" level="INFO">Current page contains text 'Versicherungsnehmer (Sie selbst)'.</msg>
+<status status="PASS" starttime="20230130 16:17:42.485" endtime="20230130 16:17:43.020"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:42.485" endtime="20230130 16:17:43.020"/>
+</kw>
+<kw name="Geschlecht männlich auswählen" library="VersicherungsnehmerPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${versicherungsnehmer_Geschlecht_Männlich}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:43.020" level="INFO">Clicking element 'xpath://*[@data-c24-test="versicherungsnehmer/geschlecht/MAENNLICH"]//*[text()="männlich"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:43.020" endtime="20230130 16:17:43.589"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:43.020" endtime="20230130 16:17:43.589"/>
+</kw>
+<kw name="Geburtsdatum" library="VersicherungsnehmerPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${versicherungsnehmer_Geburtsdatum}</arg>
+<arg>${verNehmer.geburtsdatum}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:43.593" level="INFO">Typing text '07051988' into text field 'xpath://input[@name="versicherungsnehmer[geburtsdatum].geburtsdatum"][@placeholder="TT.MM.JJJJ"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:43.593" endtime="20230130 16:17:44.520"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:43.593" endtime="20230130 16:17:44.520"/>
+</kw>
+<kw name="Führerschein Erwerb" library="VersicherungsnehmerPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${versicherungsnehmer_FührerscheinErwerb}</arg>
+<arg>${verNehmer.führerscheinErwerb}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:44.520" level="INFO">Typing text '15032015' into text field 'xpath://input[@name="versicherungsnehmer[pkwFsErteilung].pkwFsErteilung"][@placeholder="TT.MM.JJJJ"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:44.520" endtime="20230130 16:17:45.444"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:44.520" endtime="20230130 16:17:45.444"/>
+</kw>
+<kw name="Familienstand: Verheiratet" library="VersicherungsnehmerPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${versicherungsnehmer_Familienstand}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:45.444" level="INFO">Clicking element 'xpath://*[@data-c24-test="versicherungsnehmer/familienstand/open"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:45.444" endtime="20230130 16:17:46.045"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${versicherungsnehmer_Verheiratet}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:46.045" level="INFO">Clicking element 'xpath://*[@data-c24-test="versicherungsnehmer/familienstand/VERHEIRATET"][@role="option"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:46.045" endtime="20230130 16:17:46.629"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:45.444" endtime="20230130 16:17:46.629"/>
+</kw>
+<kw name="Beruf: Angesteller" library="VersicherungsnehmerPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${versicherungsnehmer_Beruf}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:46.632" level="INFO">Clicking element 'xpath: //*[@data-c24-test="versicherungsnehmer/berufsgruppe/open"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:46.631" endtime="20230130 16:17:47.196"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${versicherungsnehmer_angesteller}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:47.197" level="INFO">Clicking element 'xpath: //*[@data-c24-test="versicherungsnehmer/berufsgruppe/B20_ANGESTELLTE"][@role="option"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:47.196" endtime="20230130 16:17:47.793"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:46.630" endtime="20230130 16:17:47.793"/>
+</kw>
+<kw name="PLZ" library="VersicherungsnehmerPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${versicherungsnehmer_PLZ}</arg>
+<arg>${verNehmer.plz}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:47.797" level="INFO">Typing text '24149' into text field 'xpath: //input[@name="versicherungsnehmer[plz].plz"][@data-c24-test="versicherungsnehmer/ort/plz"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:47.795" endtime="20230130 16:17:48.776"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:47.794" endtime="20230130 16:17:48.776"/>
+</kw>
+<kw name="Punkte in Flensburg" library="VersicherungsnehmerPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${versicherungsnehmer_PunkteFlensburg}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:48.776" level="INFO">Clicking element 'xpath: //*[@data-c24-test="versicherungsnehmer/punkteFlensburg"]//*[text()="nein"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:48.776" endtime="20230130 16:17:49.362"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:48.776" endtime="20230130 16:17:49.362"/>
+</kw>
+<kw name="Zugriff auf weitere Autos" library="VersicherungsnehmerPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${versicherungsnehmer_ZugriffWeitereAutos}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:49.362" level="INFO">Clicking element 'xpath: //*[@data-c24-test="versicherungsnehmer/pkwZugriff"]//*[text()="nein"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:49.362" endtime="20230130 16:17:49.967"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:49.362" endtime="20230130 16:17:49.967"/>
+</kw>
+<kw name="weiter-Button click" library="SituationPage">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${weiterButton}</arg>
+<arg>[RETURN]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230130 16:17:49.970" level="INFO">Sending key(s) ('[RETURN]',) to xpath://button[contains(text(),"weiter")] element.</msg>
+<msg timestamp="20230130 16:17:54.649" level="INFO">Sending keys [RETURN]</msg>
+<status status="PASS" starttime="20230130 16:17:49.969" endtime="20230130 16:17:54.931"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:49.968" endtime="20230130 16:17:54.931"/>
+</kw>
+<kw name="Assertion: Fahrer des Autos ist vorhanden" library="AutoFahrer">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Fahrer des Autos</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230130 16:17:55.462" level="INFO">Current page contains text 'Fahrer des Autos'.</msg>
+<status status="PASS" starttime="20230130 16:17:54.933" endtime="20230130 16:17:55.462"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:54.933" endtime="20230130 16:17:55.462"/>
+</kw>
+<kw name="Fahrer des Autos: Versicherungsnehmer" library="AutoFahrer">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${fahrerDesAutosPage_versicherungsnehmer}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:17:55.465" level="INFO">Clicking element 'xpath://*[@data-c24-test="versicherungsnehmerIstFahrer/true"]//*[text()="Versicherungsnehmer"]'.</msg>
+<status status="PASS" starttime="20230130 16:17:55.464" endtime="20230130 16:17:56.064"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:55.464" endtime="20230130 16:17:56.064"/>
+</kw>
+<kw name="weiter-Button click" library="SituationPage">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${weiterButton}</arg>
+<arg>[RETURN]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230130 16:17:56.069" level="INFO">Sending key(s) ('[RETURN]',) to xpath://button[contains(text(),"weiter")] element.</msg>
+<msg timestamp="20230130 16:18:01.328" level="INFO">Sending keys [RETURN]</msg>
+<status status="PASS" starttime="20230130 16:17:56.067" endtime="20230130 16:18:01.612"/>
+</kw>
+<status status="PASS" starttime="20230130 16:17:56.066" endtime="20230130 16:18:01.612"/>
+</kw>
+<kw name="Assertion: Vorversichung ist vorhanden" library="VorversicherungPage">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Vorversicherung</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230130 16:18:02.151" level="INFO">Current page contains text 'Vorversicherung'.</msg>
+<status status="PASS" starttime="20230130 16:18:01.616" endtime="20230130 16:18:02.151"/>
+</kw>
+<status status="PASS" starttime="20230130 16:18:01.615" endtime="20230130 16:18:02.151"/>
+</kw>
+<kw name="Schadenfreinheitsrabat ist vorhanden" library="VorversicherungPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${vorversicherungPage_vorversicherungVorhandenButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:18:02.153" level="INFO">Clicking element 'xpath://*[@data-c24-test="vorversicherungVorhanden"]//*[text()="ja"]'.</msg>
+<status status="PASS" starttime="20230130 16:18:02.151" endtime="20230130 16:18:02.956"/>
+</kw>
+<status status="PASS" starttime="20230130 16:18:02.151" endtime="20230130 16:18:02.956"/>
+</kw>
+<kw name="Vorversichung bei HUK24" library="VorversicherungPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${VorversicherungPage_VorversicherungsFirma}</arg>
+<arg>${VorversicherungsFirma}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 16:18:02.958" level="INFO">Typing text 'HUK24' into text field 'xpath://div[@id="c24_ref_vorversicherer"]//input[@id="vorversicherer"]'.</msg>
+<status status="PASS" starttime="20230130 16:18:02.957" endtime="20230130 16:18:03.887"/>
+</kw>
+<status status="PASS" starttime="20230130 16:18:02.957" endtime="20230130 16:18:03.887"/>
+</kw>
+<kw name="vorversicherungsDauer: bis zu 2 Jahr" library="VorversicherungPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${vorversicherungPage_vorversicherungsDauerButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:18:03.892" level="INFO">Clicking element 'xpath: //*[@data-c24-test="vorversicherungDauer/D2_1_TO_3_YEARS"]//*[text()="länger als 1 Jahr"]'.</msg>
+<status status="PASS" starttime="20230130 16:18:03.890" endtime="20230130 16:18:04.494"/>
+</kw>
+<status status="PASS" starttime="20230130 16:18:03.889" endtime="20230130 16:18:04.495"/>
+</kw>
+<kw name="Kündigung durch Versicherungsnehmer" library="VorversicherungPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${vorversicherungPage_vorversicherungsKündigung}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:18:04.499" level="INFO">Clicking element 'xpath://*[@data-c24-test="kuendigungDurch/VERSICHERUNGSNEHMER"]//*[text()="ich selbst (Versicherungsnehmer)"]'.</msg>
+<status status="PASS" starttime="20230130 16:18:04.498" endtime="20230130 16:18:05.106"/>
+</kw>
+<status status="PASS" starttime="20230130 16:18:04.497" endtime="20230130 16:18:05.106"/>
+</kw>
+<kw name="weiter-Button click" library="SituationPage">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${weiterButton}</arg>
+<arg>[RETURN]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230130 16:18:05.110" level="INFO">Sending key(s) ('[RETURN]',) to xpath://button[contains(text(),"weiter")] element.</msg>
+<msg timestamp="20230130 16:18:08.212" level="INFO">Sending keys [RETURN]</msg>
+<status status="PASS" starttime="20230130 16:18:05.109" endtime="20230130 16:18:08.493"/>
+</kw>
+<status status="PASS" starttime="20230130 16:18:05.109" endtime="20230130 16:18:08.493"/>
+</kw>
+<kw name="regulierte Schäden in den letzten 3 Jahren" library="SchadenFreiheitsrabattPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${schadenfreiheitsrabatt_SchädenInLetzten3Jahren}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:18:08.496" level="INFO">Clicking element 'xpath://*[@data-c24-test="schaedenletzte3jahre"]//*[text()="nein"]'.</msg>
+<status status="PASS" starttime="20230130 16:18:08.496" endtime="20230130 16:18:09.087"/>
+</kw>
+<status status="PASS" starttime="20230130 16:18:08.495" endtime="20230130 16:18:09.087"/>
+</kw>
+<kw name="Haftpflicht SF-Klasse" library="SchadenFreiheitsrabattPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${schadenfreiheitsrabatt_HaftpflichtKlasse}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:18:09.091" level="INFO">Clicking element 'xpath://*[@data-c24-test="schadenfreiheitsklasse.kh/open"]'.</msg>
+<status status="PASS" starttime="20230130 16:18:09.090" endtime="20230130 16:18:09.673"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${schadenfreiheitsrabatt_SFK_S}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:18:09.675" level="INFO">Clicking element 'xpath://*[@data-c24-test="schadenfreiheitsklasse.kh/SFK_KH_S"][@role="option"]'.</msg>
+<status status="PASS" starttime="20230130 16:18:09.673" endtime="20230130 16:18:10.264"/>
+</kw>
+<status status="PASS" starttime="20230130 16:18:09.089" endtime="20230130 16:18:10.264"/>
+</kw>
+<kw name="Bisher keine Vollkasko" library="SchadenFreiheitsrabattPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${schadenfreiheitsrabatt_BisherKeineKasko}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:18:10.268" level="INFO">Clicking element 'xpath://div[text()="bisher keine Vollkasko"]'.</msg>
+<status status="PASS" starttime="20230130 16:18:10.267" endtime="20230130 16:18:10.858"/>
+</kw>
+<status status="PASS" starttime="20230130 16:18:10.266" endtime="20230130 16:18:10.858"/>
+</kw>
+<kw name="weiter-Button click" library="SituationPage">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${weiterButton}</arg>
+<arg>[RETURN]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230130 16:18:10.862" level="INFO">Sending key(s) ('[RETURN]',) to xpath://button[contains(text(),"weiter")] element.</msg>
+<msg timestamp="20230130 16:18:14.370" level="INFO">Sending keys [RETURN]</msg>
+<status status="PASS" starttime="20230130 16:18:10.860" endtime="20230130 16:18:14.655"/>
+</kw>
+<status status="PASS" starttime="20230130 16:18:10.860" endtime="20230130 16:18:14.655"/>
+</kw>
+<kw name="Assertion: Rabatte ist vorhanden." library="RabattPage">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Rabatte</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230130 16:18:15.188" level="INFO">Current page contains text 'Rabatte'.</msg>
+<status status="PASS" starttime="20230130 16:18:14.658" endtime="20230130 16:18:15.188"/>
+</kw>
+<status status="PASS" starttime="20230130 16:18:14.657" endtime="20230130 16:18:15.188"/>
+</kw>
+<kw name="Weiteres Auto auf Sie oder Familienmitglieder versichert" library="RabattPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${rabattPage_weiterAutosVersichertNEiN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:18:15.191" level="INFO">Clicking element 'xpath://*[@data-c24-test="erstfahrzeugVorhanden"]//*[text()="nein"]'.</msg>
+<status status="PASS" starttime="20230130 16:18:15.190" endtime="20230130 16:18:16.093"/>
+</kw>
+<status status="PASS" starttime="20230130 16:18:15.190" endtime="20230130 16:18:16.093"/>
+</kw>
+<kw name="Ich bestätige" library="RabattPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${rabattPage_ichBestätige}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 16:18:16.097" level="INFO">Clicking element 'xpath://*[@data-c24-test="erstinformationAccepted"]'.</msg>
+<status status="PASS" starttime="20230130 16:18:16.096" endtime="20230130 16:18:16.724"/>
+</kw>
+<status status="PASS" starttime="20230130 16:18:16.095" endtime="20230130 16:18:16.724"/>
+</kw>
+<kw name="Ergebnis Anzeigen" library="RabattPage">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${rabattPage_ergebnisAnzeigen}</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230130 16:18:16.728" level="INFO">Sending key(s) ('RETURN',) to xpath://button[text()="Ergebnis anzeigen"] element.</msg>
+<msg timestamp="20230130 16:18:21.402" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20230130 16:18:21.402" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20230130 16:18:16.726" endtime="20230130 16:18:21.670"/>
+</kw>
+<status status="PASS" starttime="20230130 16:18:16.726" endtime="20230130 16:18:21.670"/>
+</kw>
+<kw name="Tarifoption Anzeigen" library="RabattPage">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${rabattPage_tarifOptionAnzeigen}</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230130 16:18:21.673" level="INFO">Sending key(s) ('RETURN',) to xpath://button[@data-c24-test="tarifoptionen-uebernehmen"] element.</msg>
+<msg timestamp="20230130 16:18:30.265" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20230130 16:18:30.265" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20230130 16:18:21.672" endtime="20230130 16:18:30.526"/>
+</kw>
+<status status="PASS" starttime="20230130 16:18:21.672" endtime="20230130 16:18:30.526"/>
+</kw>
+<kw name="TestCase beenden" library="Browser_Open&amp;Close" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>40</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230130 16:19:10.530" level="INFO">Slept 40 seconds</msg>
+<status status="PASS" starttime="20230130 16:18:30.529" endtime="20230130 16:19:10.530"/>
+</kw>
+<status status="PASS" starttime="20230130 16:18:30.528" endtime="20230130 16:19:10.530"/>
+</kw>
+<doc>die Idee von diesem Test ist Robot Framework zu erlernen und zu benutzen.</doc>
+<tag>Automatisierung</tag>
+<status status="PASS" starttime="20230130 16:17:16.894" endtime="20230130 16:19:10.530"/>
+</test>
+<status status="PASS" starttime="20230130 16:17:16.778" endtime="20230130 16:19:10.530"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Automatisierung</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="CHECK24 VW Golf">CHECK24 VW Golf</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
