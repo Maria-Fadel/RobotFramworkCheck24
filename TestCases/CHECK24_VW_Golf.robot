@@ -11,6 +11,7 @@ Resource  ../PageResources/AutoFahrer.robot
 Resource  ../PageResources/VorversicherungPage.robot
 Resource  ../PageResources/SchadenFreiheitsrabattPage.robot
 Resource  ../PageResources/RabattPage.robot
+Resource  ../PageResources/AngebotsPage.robot
 
 
 Test Setup  Browser_Open&Close.Open Browser & Maximize
@@ -64,8 +65,6 @@ Test Teardown   Browser_Open&Close.TestCase beenden
     VorversicherungPage.Kündigung durch Versicherungsnehmer
     weiter-Button click
 
-
-    SchadenFreiheitsrabattPage.regulierte Schäden in den letzten 3 Jahren
     SchadenFreiheitsrabattPage.Haftpflicht SF-Klasse
     SchadenFreiheitsrabattPage.Bisher keine Vollkasko
     weiter-Button click
@@ -75,6 +74,8 @@ Test Teardown   Browser_Open&Close.TestCase beenden
     RabattPage.Ich bestätige
     RabattPage.Ergebnis Anzeigen
     RabattPage.Tarifoption Anzeigen
+
+    AngebotsPage.Send Angebote zu Datenbank
 
 
 *** Keywords ***

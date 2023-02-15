@@ -2,6 +2,7 @@ weiterButton='xpath://button[contains(text(),"weiter")]'
 
 #Start page Elements
 startPage_Akzeptieren ='xpath://*[text()="Akzeptieren"]'
+#startPage_Akzeptieren ='//a[@class="c24-cookie-consent-button"][text()="Akzeptieren"]'
 startPage_Tarifvergleichen = 'xpath://button[@type="submit"][contains(text(),"Tarife vergleichen")]'
 
 #AutoPage
@@ -53,6 +54,7 @@ vorversicherungPage_vorversicherungsKündigung    ='xpath://*[@data-c24-test="ku
 schadenfreiheitsrabatt_SchädenInLetzten3Jahren= 'xpath://*[@data-c24-test="schaedenletzte3jahre"]//*[text()="nein"]'
 schadenfreiheitsrabatt_HaftpflichtKlasse = 'xpath://*[@data-c24-test="schadenfreiheitsklasse.kh/open"]'
 schadenfreiheitsrabatt_SFK_S ='xpath://*[@data-c24-test="schadenfreiheitsklasse.kh/SFK_KH_S"][@role="option"]'
+schadenfreiheitsrabatt_SFK_5 = 'xpath://*[@data-c24-test="schadenfreiheitsklasse.kh/SFK_KH_5"][@role="option"]'
 schadenfreiheitsrabatt_BisherKeineKasko= 'xpath://div[text()="bisher keine Vollkasko"]'
 
 
@@ -79,3 +81,7 @@ rabattPage_tarifOptionAnzeigen= 'xpath://button[@data-c24-test="tarifoptionen-ue
 situationPage_neuesAngeschafftesAuto='xpath://*[@data-c24-test="opb-berechnungsgrund-fahrzeugwechsel"]//*[text()="Neu angeschafftes Auto"]'
 situationPage_tarifvergleichButton= 'xpath://button[@type="submit"][contains(text(),"Tarife vergleichen")]'
 
+AngebotPage_var1  ='xpath://div[text()="weiter"]['
+AngebotPage_var2  =']'
+AngebotPage_zurück = 'xpath://div[text()="zurück zu Ergebnisliste"]'
+AngebotPage_Weiter = '(//div[@class="box24ResultLink c24CssButton js24Detail"][normalize-space()="weiter"])['
