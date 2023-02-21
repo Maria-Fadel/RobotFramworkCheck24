@@ -81,18 +81,4 @@ Test Teardown   Browser_Open&Close.TestCase beenden
 *** Keywords ***
 
 
-    #wait until page contains Element/something
-    #set selenium implicit wati 5 seconds
-    #select checkbox
-    #select radio button
-    #select option from dropDown
-    # 1) select from list by label ID/Name Value
-    # 2) select from list by index ID/Name 5
-    #input text name: xyz   value
-    #log to console value
-    # press keys  ${weiterButton}  [RETURN]
-    #Click Button
-    #Click Element
-    #Click Link
-    #    capture page screenshot     C:\Users\ffadel\PycharmProjects\Check24\selenium-screenshot-1.png
-    #create webdriver  Chrome    executable_path="C:\driver\chrome\chromedriver.exe"
+
