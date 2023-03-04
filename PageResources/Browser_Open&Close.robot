@@ -10,6 +10,6 @@ Open Browser & Maximize
      Maximize Browser Window
 
 TestCase beenden
-    #wait until page contains    something
-    Sleep   5
-    #close browser
+
+    Sleep   60
+    close browser
