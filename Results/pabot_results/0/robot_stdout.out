@@ -1,0 +1,35 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.CHECK24 VW Golf                                                        
+==============================================================================
+Überprüfen der grundlegende Suchfunktion für Check25/KFZ :: die Id...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\ffadel\PycharmProjects\Check24\TestCases\CHECK24_VW_Golf.robot:24
+    T:  Überprüfen der grundlegende Suchfunktion für Check25/KFZ    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\ffadel\PycharmProjects\Check24\TestCases\CHECK24_VW_Golf.robot:78
+      Send Angebote zu Datenbank    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\ffadel\PycharmProjects\Check24\PageResources\AngebotsPage.robot:23
+      Connect DB    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\ffadel\PycharmProjects\Check24\PageResources\AngebotsPage.robot:62
+      Connect To Database    pymysql    ${database}    ${user}    ${password}    ${host}    ${port}
+      |  ${database} = mydb (str)
+      |  ${user} = root (str)
+      |  ${password} = 1234 (str)
+      |  ${host} = localhost (str)
+      |  ${port} = 3306 (str)
+______________________________________________________________________________
+| FAIL |
+No keyword with name 'Connect To Database' found.
+------------------------------------------------------------------------------
+Suites.CHECK24 VW Golf                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\ffadel\PycharmProjects\Check24\Results\pabot_results\0\output.xml

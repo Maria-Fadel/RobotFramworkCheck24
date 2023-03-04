@@ -1,0 +1,6 @@
+datasources:51856619c95b5c344b83d23964b26e288c03a3aa
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:350b988a44908ec0d4cd9415e0792ab529cb9d90
+--suite Suites.CHECK24 VW Golf
+--suite Suites.Test

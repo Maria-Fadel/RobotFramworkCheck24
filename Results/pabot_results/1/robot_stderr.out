@@ -1,0 +1,10 @@
+[ ERROR ] Error in file 'C:\Users\ffadel\PycharmProjects\Check24\TestCases\test.robot' on line 3: Importing library 'DatabaseLibrary' failed: ModuleNotFoundError: No module named 'DatabaseLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Python\Scripts\robot.exe
+  C:\Python\python311.zip
+  C:\Python\Lib
+  C:\Python\DLLs
+  C:\Python
+  C:\Python\Lib\site-packages

@@ -1,0 +1,32 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Test                                                                   
+==============================================================================
+Send Angebote zu Datenbank                                              
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\ffadel\PycharmProjects\Check24\TestCases\test.robot:23
+    T:  Send Angebote zu Datenbank    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\ffadel\PycharmProjects\Check24\TestCases\test.robot:26
+      Connect DB    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\ffadel\PycharmProjects\Check24\TestCases\test.robot:16
+      Connect To Database    pymysql    ${database}    ${user}    ${password}    ${host}    ${port}
+      |  ${database} = mydb (str)
+      |  ${user} = root (str)
+      |  ${password} = 1234 (str)
+      |  ${host} = localhost (str)
+      |  ${port} = 3306 (str)
+______________________________________________________________________________
+| FAIL |
+No keyword with name 'Connect To Database' found.
+------------------------------------------------------------------------------
+Suites.Test                                                           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\ffadel\PycharmProjects\Check24\Results\pabot_results\1\output.xml
